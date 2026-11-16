@@ -8,9 +8,56 @@ html {
 
 .body {
   background-color: $background-main;
+  margin: 500px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.3s ease-in;
 
   &::-webkit-scrollbar {
     width: 0;
+  }
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid $color-light;
+  color: $color-light;
+}
+
+.main__btn {
+  max-width: 100px;
+  max-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid $color-light;
+  color: $color-light;
+}
+
+
+@media screen and (hover: hover) {
+  .main__btn:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in;
   }
 }
