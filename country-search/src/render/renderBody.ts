@@ -20,5 +20,5 @@ export function renderody() {
 
   // Add to page
   document.body.append(container);
-  container.append(btn, input);
+  container.append(input, btn);
 }
